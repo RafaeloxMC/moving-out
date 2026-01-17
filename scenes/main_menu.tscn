@@ -1,3 +1,5 @@
 [gd_scene format=3 uid="uid://c3aepmcoamvvm"]
 
-[node name="MainMenu" type="Node2D"]
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
