@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://ducy2ic2osiad"]
+[gd_scene load_steps=6 format=3 uid="uid://ducy2ic2osiad"]
 
 [ext_resource type="Theme" uid="uid://ebe70bhti1c4" path="res://assets/themes/main_theme.tres" id="1_ioskq"]
+[ext_resource type="Script" uid="uid://bgwpo1jaf3qsg" path="res://scripts/intro.gd" id="1_yjqpq"]
 
 [sub_resource type="Animation" id="Animation_4bx60"]
 length = 0.001
@@ -104,6 +105,20 @@ tracks/3/keys = {
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
 }
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(7),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"call_main_menu"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i2l1n"]
 _data = {
@@ -114,6 +129,7 @@ _data = {
 [node name="Intro" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_yjqpq")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 0
