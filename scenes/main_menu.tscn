@@ -1,10 +1,12 @@
 [gd_scene format=4 uid="uid://c3aepmcoamvvm"]
 
+[ext_resource type="Script" uid="uid://ba7e1e21pr1qa" path="res://scripts/ui/main_menu.gd" id="1_ekxnf"]
 [ext_resource type="TileSet" uid="uid://0mp32pxq5pfg" path="res://assets/tile_sets/world.tres" id="1_l6cm7"]
 
 [node name="MainMenu" type="Control" unique_id=1848045298]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_ekxnf")
 
 [node name="BackgroundContainer" type="Node2D" parent="." unique_id=629797485]
 
@@ -59,3 +61,7 @@ offset_top = 128.0
 offset_right = 384.0
 offset_bottom = 184.0
 text = "Quit"
+
+[connection signal="pressed" from="BackgroundContainer/Camera2D/CanvasLayer/ButtonContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="BackgroundContainer/Camera2D/CanvasLayer/ButtonContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="BackgroundContainer/Camera2D/CanvasLayer/ButtonContainer/Quit" to="." method="_on_quit_pressed"]
