@@ -1,0 +1,11 @@
+extends TileMapLayer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	var filled_tiles: Array[Vector2i] = get_used_cells()
+	for filled_tile in filled_tiles:
+		var neighboring_tiles = get_surrounding_cells(filled_tile)
+		for neighbor in neighboring_tiles:
+			if get_cell_source_id(neighbor) == -1:
+				set_cell(neighbor, 0, Vector2i.ZERO)
