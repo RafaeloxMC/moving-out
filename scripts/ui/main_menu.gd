@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_play_pressed() -> void:
-	pass # Replace with function body.
+	SceneManager.call_scene("game")
 
 func _on_settings_pressed() -> void:
 	pass # Replace with function body.
