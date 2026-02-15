@@ -126,18 +126,18 @@ _data = {
 &"fade": SubResource("Animation_yjqpq")
 }
 
-[node name="Intro" type="Control"]
+[node name="Intro" type="Control" unique_id=966310238]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_yjqpq")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=292635977]
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 color = Color(0, 0, 0, 1)
 
-[node name="Made by" type="Label" parent="Background"]
+[node name="Made by" type="Label" parent="Background" unique_id=1196151898]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
@@ -157,7 +157,7 @@ text = "Made by"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="xvcf" type="Label" parent="Background"]
+[node name="xvcf" type="Label" parent="Background" unique_id=1408006907]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
@@ -178,7 +178,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Title" type="Label" parent="Background"]
+[node name="Title" type="Label" parent="Background" unique_id=573704221]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
@@ -198,7 +198,7 @@ text = "WARNING"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Caption" type="Label" parent="Background"]
+[node name="Caption" type="Label" parent="Background" unique_id=1918768617]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 8
