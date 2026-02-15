@@ -1,5 +1,49 @@
 [gd_scene format=3 uid="uid://c3aepmcoamvvm"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=1848045298]
 layout_mode = 3
 anchors_preset = 0
+
+[node name="ButtonContainer" type="Control" parent="." unique_id=55770422]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 64.0
+offset_top = 320.0
+offset_right = 448.0
+offset_bottom = 504.0
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="ButtonContainer" unique_id=1808091822]
+layout_mode = 0
+offset_right = 384.0
+offset_bottom = 56.0
+text = "Play"
+
+[node name="Settings" type="Button" parent="ButtonContainer" unique_id=917652488]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 384.0
+offset_bottom = 120.0
+text = "Settings"
+
+[node name="Quit" type="Button" parent="ButtonContainer" unique_id=460741183]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 384.0
+offset_bottom = 184.0
+text = "Quit"
+
+[node name="Label" type="Label" parent="." unique_id=1817321525]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 120.0
+offset_right = 448.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 48
+text = "Moving Out!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackgroundContainer" type="Node2D" parent="." unique_id=629797485]
