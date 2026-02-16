@@ -83,7 +83,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=26941772]
-z_index = 2
+y_sort_enabled = true
 motion_mode = 1
 script = ExtResource("1_dovo2")
 
@@ -100,3 +100,7 @@ frame_progress = 0.23508835
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1537782839]
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=133935458]
+position = Vector2(-1, 0)
+gizmo_extents = 5.0
