@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ba7e1e21pr1qa" path="res://scripts/ui/main_menu.gd" id="1_ekxnf"]
 [ext_resource type="TileSet" uid="uid://0mp32pxq5pfg" path="res://assets/tile_sets/world.tres" id="1_l6cm7"]
+[ext_resource type="Theme" uid="uid://ebe70bhti1c4" path="res://assets/themes/main_theme.tres" id="3_bqqt6"]
 
 [node name="MainMenu" type="Control" unique_id=1848045298]
 layout_mode = 3
@@ -26,7 +27,8 @@ offset_left = 64.0
 offset_top = 120.0
 offset_right = 448.0
 offset_bottom = 200.0
-theme_override_font_sizes/font_size = 48
+theme = ExtResource("3_bqqt6")
+theme_override_font_sizes/font_size = 64
 text = "Moving Out!"
 horizontal_alignment = 1
 vertical_alignment = 1
