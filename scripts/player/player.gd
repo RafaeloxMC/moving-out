@@ -4,18 +4,26 @@ extends CharacterBody2D
 
 const SPEED = 48.0
 
+var animation_suffix = ""
+
 func _physics_process(_delta: float) -> void:
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	if direction != Vector2.ZERO:
 		velocity = direction * SPEED
-		animated_sprite_2d.play("walk")
+		animated_sprite_2d.play("walk" + animation_suffix)
 	else:
 		velocity = Vector2.ZERO
-		animated_sprite_2d.play("default")
+		animated_sprite_2d.play("idle" + animation_suffix)
 		
 	if direction.x > 0:
 		animated_sprite_2d.flip_h = false
 	else:
 		if direction.x < 0:
 			animated_sprite_2d.flip_h = true
+			
+	if direction.y > 0:
+		animation_suffix = ""
+	else:
+		if direction.y < 0:
+			animation_suffix = "_backwards"
 	move_and_slide()
