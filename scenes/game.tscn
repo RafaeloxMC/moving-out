@@ -23,6 +23,6 @@ tile_map_data = PackedByteArray("AAAUAB4AAAABAAAAAAATAB8AAAABAAAAAAATACAAAAABAAA
 tile_set = ExtResource("1_lnu2h")
 
 [node name="Player" parent="Node2D" unique_id=26941772 instance=ExtResource("2_yqjtg")]
-z_index = 1
+z_index = 2
 y_sort_enabled = false
 position = Vector2(652, 301)
