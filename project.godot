@@ -22,6 +22,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 SceneManager="*uid://074d7feapto5"
+TransitionManager="*uid://cgxgr72ecoew6"
 
 [editor_plugins]
 
