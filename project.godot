@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 
 SceneManager="*uid://074d7feapto5"
 TransitionManager="*uid://cgxgr72ecoew6"
+MusicPlayer="*uid://df8qmxnng74ii"
 
 [editor_plugins]
 
