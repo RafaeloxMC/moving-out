@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://0mp32pxq5pfg" path="res://assets/tile_sets/world.tres" id="1_lnu2h"]
 [ext_resource type="Script" uid="uid://btkttb266hg6p" path="res://scripts/world/tile_map.gd" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dijwmla0l6iqs" path="res://scenes/player/player.tscn" id="2_yqjtg"]
+[ext_resource type="Theme" uid="uid://ebe70bhti1c4" path="res://assets/themes/main_theme.tres" id="4_lbhrr"]
 
 [node name="Game" type="Node2D" unique_id=1814055523]
 y_sort_enabled = true
@@ -25,3 +26,14 @@ tile_set = ExtResource("1_lnu2h")
 z_index = 2
 y_sort_enabled = false
 position = Vector2(648, 244)
+
+[node name="Label" type="Label" parent="." unique_id=1568698032]
+z_index = 4096
+offset_left = 744.0
+offset_top = 170.0
+offset_right = 911.0
+offset_bottom = 241.0
+theme = ExtResource("4_lbhrr")
+theme_override_font_sizes/font_size = 8
+text = "hey, player or reviewer! this version of the game is extremely unfinished. it has no game loop yet and only shows the movement mechanics!"
+autowrap_mode = 3
