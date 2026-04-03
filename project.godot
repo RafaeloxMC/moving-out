@@ -25,6 +25,10 @@ SceneManager="*uid://074d7feapto5"
 TransitionManager="*uid://cgxgr72ecoew6"
 MusicPlayer="*uid://df8qmxnng74ii"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
